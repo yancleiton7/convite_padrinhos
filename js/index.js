@@ -36,6 +36,7 @@ function muda_pagina(some, aparece){
     
     some = '';
     aparece = '';
+    
 }
 
 function redirect (){
