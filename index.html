@@ -5,20 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <meta property="og:title" content="Temos uma pergunta a te fazer" />
+    <meta property="og:description" content="Venha! Entre, dê uma olhada e se divirta" />
+    <meta property="og:image" content="imagens/tela.png" />  
+    <link rel="icon" href="imagens/favicon.png" />
     <script src="js/index.js"></script>
     <title>Casamento Yan e Iasmin</title>
 </head>
 <body>
 
-    <audio autoplay loop >
+    <audio id="musica" autoplay loop >
         <source src="audio/sefoc.ogg" type="audio/ogg">
         <source src="audio/se_for_cvc.mp3" type="audio/mpeg">
         <source src="audio/seforcvc.wav" type="audio/wav">
       </audio>
 
+      
+
     <section class="game" id="main">
             <div class="logo"></div>
-            <div class="start" onclick="muda_pagina('main', 'formulario')"></div>
+            <div class="start" onclick="muda_pagina('main', 'formulario') ; play_audio()"></div>
     </section>
 
     <section id="formulario" class="formulario" style="display: none;">
@@ -97,7 +103,7 @@
             </div>
             <div class="botoes">
                 <img src="imagens/butoes/sim.png" alt="" class="btn" onclick="muda_pagina('madrinha', 'final')" >
-                <img src="imagens/butoes/nao.png" alt="" class="btn">
+                <img src="imagens/butoes/nao.png" alt="" class="btn" onclick="nao_aceitou()">
             </div>
             <span id="assinatura">Com muuita gratidão, <br> iasmin e yan</span>
         </div>
@@ -127,7 +133,7 @@
         <div class="box">
             <img src="imagens/fotos/life.png" class="life" alt="">
             <div class="spoilers">
-                <p>O casamento será realizado no dia 19.09.2021</p>
+                <p>O casamento será realizado no dia</p><p class="data">19.09.2021</p>
                 <p>E já temos listinha de Presentes!!</p>
                 <p>clica no link aqui em baixo e você vai ser redirecionado para escolher o que quer presentear.</p>
                 <p>Tamo juntooos!!!</p>

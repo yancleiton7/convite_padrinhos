@@ -1,5 +1,5 @@
 
-
+var nome = ''
 function capturar(nome, intro, convite,  some, aparece){
 
     capturando = document.getElementById(nome).value;
@@ -15,6 +15,9 @@ function capturar(nome, intro, convite,  some, aparece){
 
 }
 
+function nao_aceitou(){
+    alert('Oxe?! Acho que clicou sem querer aqui, hein?')
+}
 
 function show_article(id){
     
@@ -37,6 +40,9 @@ function muda_pagina(some, aparece){
     some = '';
     aparece = '';
     
+}
+function play_audio() {
+    document.getElementById('musica').play();
 }
 
 function redirect (){
